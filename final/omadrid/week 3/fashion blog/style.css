@@ -2,16 +2,18 @@ body, h1, h2, h3 {font-family: 'Lato', sans-serif;
   font-weight:300;
 }
 body{ margin:50px;
-width:700px;}
+width:900px;}
 
 a:link {text-decoration:none;}
 a:visited {text-decoration:none;}
-a:hover {text-decoration:underline;}
+a:hover {text-decoration:none;
+          color: #363636}
 a:active {text-decoration:underline;}
 
 #blogheader a {
   color: #DD0000;
   font-size: 50px;
+  
 }
 #blogsubheader {
   font-size: 24px;
@@ -19,32 +21,54 @@ a:active {text-decoration:underline;}
 #toplinklist {
   width: 100%;
 }
+#toplinklist ul {
+  display: block;
+}
+#toplinklist li {
+  margin: 0px !important;
+  list-style: none;
+  padding: 10px 15px 10px 20px;
+  display: inline-block;
+  background-color:black;
+  border: 1px solid white;
+}
+
 #toplinklist a {
-  color: #DDDEDE;
+  color: white;
   font-size:22px;
   padding: 2px;
   margin-right: 15px;
-  border-bottom: 2px solid #DDDEDE;
+  /* text-decoration:underline; */
+}
+main{
+  margin: 60px 0 0 0 ;
+}
+
+#articlewrapper {
+  width:70%;
+  float:left;
+  margin: 0 25px 0 0;
 }
 article {
  border-bottom: 2px solid #DDDEDE;
   font-size:16px;
   line-height:150%;
+  margin-bottom: 40px;
 }
 
 .articledate {
   color: #DDDEDE;
   font-size: 30px;
-  margin: 60px 0 20px 0;
+  margin: 0px 0 20px 0;
 }
 
 .articletitle {
   font-size: 34px;
-  color:black;
+  color:black !important;
     margin:15px 0 20px 0;
 }
 
-img{
+h2 + img{
   width:100%;
 }
 article p:first-letter {
@@ -58,10 +82,32 @@ article p:first-letter {
 
 h4{
  text-align:right; 
+  font-weight:700;
 }
 h4 a {
   color:#DD0000;
 }
+
+.ad {
+  padding: 20px 0 20px 0;
+  border-top : 1px solid lightgray;
+  border-bottom : 1px solid lightgray;
+}
+h5{
+  font-size: 16px;
+  color: darkgray;
+}
+aside {
+    line-height:150%;
+    float:right;
+  width:230px;
+}
+
+#popular a:link {color: red;}
+#popular a:visited {color: red;}
+#popular a:active {color: red;}
+#popular a:link {color: red;}
+
 #bottomlinklist {
   width:100%;
   margin: 30px 0 30px 0;
@@ -81,4 +127,9 @@ h4 a {
 
 #copyright {
   color: #CCC;
+}
+
+.clearfloat {
+  clear:both;
+  height: 0px;
 }
