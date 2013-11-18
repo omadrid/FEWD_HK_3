@@ -1,0 +1,89 @@
+*, li {
+  margin: 0;
+  padding: 0;
+}
+a:link, a:visited {text-decoration: none; color:black;}
+/*a:hover {color:#FF00FF;} 
+a:active {color:#0000FF;} */
+
+body {
+  width: 900px;
+  margin: 25px;
+}
+h1 {
+  text-align: center;
+ }
+h1 a {
+  margin: 0px 0px 20px 0px;
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase; 
+  text-shadow: 2px 2px lightGray;
+  display: block;
+}
+ul {
+  width: 100%;  
+  border-top: 3px solid black; 
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 0px 15px 0px;
+}
+#primary-nav li.selected {
+  background-color: #666;
+}
+#primary-nav li.selected span {
+   color: #FF6; 
+}
+ul li a {
+  padding: 0px 15px 0px 15px;  
+  border-right: 1px solid darkGray;
+  font-size: 20px;
+}
+ul li:hover {
+  background-color: #EEE;
+}
+.blogs a {  
+  border-right: 0px solid white;
+}
+#slide-down section {
+  background-color: #666;
+}
+.article-thumbs article{
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  float: left;
+  width: 11%;
+}
+.article-thumbs article img{
+  width:100%;
+}
+.article-thumbs article:hover{
+  background-color: darkGray;
+}
+h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FF6;
+}
+h2 {
+  font-size: 16px;
+  color: white;
+}
+.clear {
+  clear:both;
+  height: 0px;
+}
+section.drop {
+  display: none;
+}
+#main {
+  margin: 15px;
+}
+#main h1 {
+  text-align: left;
+  font-size: 40px;
+  padding-bottom: 20px;;
+} 
