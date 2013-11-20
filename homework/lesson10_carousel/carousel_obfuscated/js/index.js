@@ -49,7 +49,6 @@ function votePlaced () {
   //at the final pic, calculate average rating and display (do not pass go or collect $200)
   } else { 
    //sum total all voteValues
-      alert('theEnd');
       var sumVotes = 0;
       var countVotes = 0;
       votes.forEach(function(element, index) {
@@ -59,5 +58,6 @@ function votePlaced () {
 	      }
       });
       alert(sumVotes + ' ' + countVotes + ' ' + sumVotes/countVotes);
+      $('footer').text("   Holla Back, you've reached the end of the array. Your average vote is " + sumVotes/countVotes);
 	}
 };
