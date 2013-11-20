@@ -1,9 +1,7 @@
 var images = [
-  "http://dummyimage.com/300/09f/fff.png",
-  "http://dummyimage.com/400/09f/fff.png",
+  "http://dummyimage.com/100/09f/fff.png",
   "http://dummyimage.com/200/09f/fff.png",
-  "http://lorempixel.com/400/400/animals/4",
-  "http://lorempixel.com/400/400/animals/5"
+  "http://dummyimage.com/300/09f/fff.png"
 ];
 
 var votes;
@@ -28,9 +26,9 @@ function checkPosition () {
 };
 //  
 function goToPrevImg () {
- position--;
- $('#image-to-vote-on').attr('src', images[position]);
- checkPosition ();
+  position--;
+  $('#image-to-vote-on').attr('src', images[position]);
+  checkPosition ();
 };
 // 
 function goToNextImg () {
@@ -39,34 +37,27 @@ function goToNextImg () {
  checkPosition ();
 };
 
-function votePlaced () {
- // Get voteValue
-  var voteValue = $('#your-vote option:selected').text();
-  alert(voteValue);
-  votes[position] = voteValue;   // Set the value of the correct element
-  if (position != images.length) {
-    // Go to the next picture
-    goToNextImg();
-  } else {
-    // Calculate average rating and display (do not pass go or collect $200)
-   //loop through array to get sum total voteValues
-    votes.forEach(function(e) {
-      sumVotes += parseInt($(this).val()) || 0 ;
-      alert(sumVotes);
-    };
-      //loop through array - if not null, add to count
-  votesFilter = $.grep(votes, function( voteValue, i ) {
-  return ( voteValue > 1 );
-});
-countVotes = votesFilter.length;
-alert(countVotes);
-                  
 
-      
-      //divide total by count
-      alert(sumVotes + ' divided by ' + countVotes);
-      var average = sumVotes / countVotes;
-      alert(average);
-  }
+function votePlaced () {
+  // Get voteValue
+  var voteValue = $('#your-vote option:selected').text();
+  // Set the value of the correct element
+  votes[position] = voteValue;   
+  // if there are more pics in the array, go to the next image
+  if (position != images.length - 1) {
+    goToNextImg();
+  //at the final pic, calculate average rating and display (do not pass go or collect $200)
+  } else { 
+   //sum total all voteValues
+      alert('theEnd');
+      var sumVotes = 0;
+      var countVotes = 0;
+      votes.forEach(function(element, index) {
+	      if ( element != null ) {
+	      	countVotes++;
+	      	sumVotes += parseInt(element);
+	      }
+      });
+      alert(sumVotes + ' ' + countVotes + ' ' + sumVotes/countVotes);
+	}
 };
-*/
