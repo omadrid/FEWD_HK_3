@@ -39,6 +39,10 @@ function goToNextImg () {
 
 
 function votePlaced () {
+  //reset dropdown to default
+  $('#your-vote').change(function(){
+    $('#your-vote').prop('selectedIndex',0);
+  });
   // Get voteValue
   var voteValue = $('#your-vote option:selected').text();
   // Set the value of the correct element
@@ -57,7 +61,7 @@ function votePlaced () {
 	      	sumVotes += parseInt(element);
 	      }
       });
-      alert(sumVotes + ' ' + countVotes + ' ' + sumVotes/countVotes);
-      $('footer').text("   Holla Back, you've reached the end of the array. Your average vote is " + sumVotes/countVotes);
+      //var average = parseFloat((sumVotes/countVotes).val().toFixed(2));
+      $('footer').text("   Holla Back, you've reached the end of the array. Your average vote is " + average);
 	}
 };

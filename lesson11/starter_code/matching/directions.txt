@@ -1,6 +1,8 @@
 Features:
 1) 4 cards (2 pairs) to match (Add more cards if you want a challenge)
+
 2) Reset button, start game button
+
 3) Message that congratulates the gamer when they match all cards and tells them how many moves it took them.
 
 Optional: 
@@ -15,3 +17,7 @@ Hint: When a card is "selected" you should show the front of the card. At all ot
 4) Translate pseudo code into JS
 
 Happy Coding :)
+
+
+
+http://imgur.com/h9rfFPp
