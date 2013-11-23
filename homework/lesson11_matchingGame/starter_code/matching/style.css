@@ -9,6 +9,9 @@ body {
 }
 #cards .king {
   background-image: url('http://i.imgur.com/lJ4gB6g.png'); 
+  /* You want to make use of the background-position property
+  to properly select a single card, check out the obfuscated code
+  for examples of how this works */
   }
 #cards .queen {
   background-image: url('http://i.imgur.com/OEEZW91.png');
