@@ -1,0 +1,64 @@
+body {
+  background-color: slateGray;
+  margin: 30px;
+}
+#all-cards {
+  /* (20px + 71px) x columncount  */
+  width: 200px;
+  margin: auto;
+}
+.card {
+  margin: 10px;
+  width: 69px;
+  height: 93px;
+  border-radius: 4px 4px;
+  box-shadow: 5px 5px 20px 5px #222;
+  background-image: url('http://psdhunter.com/psds/3838-download-for-free-thin-vertical-lines-pattern-free-png.png');
+  /*background-image: url('http://images.fineartamerica.com/images-medium-large-5/bright-colors-vertical-lines-abstract-pattern-stephen-rees.jpg');*/
+}
+.card.faceUp {
+  background-image: url('http://i.imgur.com/eomJgjC.png');
+}
+/*.secret {
+  background-image: url('http://images.fineartamerica.com/images-medium-large-5/bright-colors-vertical-lines-abstract-pattern-stephen-rees.jpg');
+  background-image: url('http://i.imgur.com/yLcH1Fs.png');
+  background-image: url('http://i.imgur.com/Ha0xrt6.png');
+  background-image: url('http://i.imgur.com/D54nf44.png');
+  background-position: -1px -1px !important;
+}*/
+.card-holder {
+  width: 80px;
+  display: inline-block;
+  float:left;
+  margin: auto;
+  text-align: center;
+}
+.matched.card {
+  visibility: hidden;
+}
+.hidden-message {
+  display: none;
+}
+#words {
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+.clear {
+  height: 0px;
+  clear: both;
+}
+/*cards-clubs---------------*/
+#ace { background-position: -2px -3px; }
+#two { background-position: -75px -3px; }
+#three { background-position: -148px -3px;}
+#four { background-position: -221px -3px; }
+#five { background-position: -294px -3px; }
+#six { background-position: -367px -3px; }
+#seven { background-position: -440px -3px; }
+#eight { background-position: -513px -3px; }
+#A_nine, #B_nine {background-position: -586px -3px;}
+#ten { background-position: -659px -3px; }
+#jack { background-position: -732px -4px; }
+#queen { background-position: -805px -4px; }
+#A_king, #B_king { background-position: -878px -4px; }

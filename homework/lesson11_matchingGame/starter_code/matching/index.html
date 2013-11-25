@@ -1,20 +1,31 @@
 <html lang="en-us">
 <head>
 		<meta charset="utf-8">
-		<title>Concentration Game</title>
-		<link rel="stylesheet" href="css/main.css">
+		<title>Your Face is a Memory Game</title>
+		<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="container">
-  <button id="reset">new game</button>  
-<div id="cards">  
-  <div id="first" class="king"></div>
-  <div id="second" class="queen"></div>
-  <div id="third" class="queen"></div>
-  <div id="fourth" class="king secret"></div>
-</div>
+	<div id="all-cards">  
+		<div class="card-holder">
+    		<div id="A_nine" class="card"></div>
+    	</div>
+    	<div class="card-holder">
+    		<div id="A_king" class="card"></div>
+    	</div>
+    	<div class="card-holder">
+     		<div id="B_king" class="card"></div>
+     	</div>
+    	<div class="card-holder">
+    		<div id="A_nine" class="card"></div>
+    	</div>
+        <div class="clear"></div> 
+  </div>
+		<div id="words"><p id="winning" class="hidden-message">Congratulations! You've won! It took you <span id="score"></span> clicks.</p>
+    <button id="reset">new game</button>  
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-	<script src="js/main.js"></script>
 </html>
