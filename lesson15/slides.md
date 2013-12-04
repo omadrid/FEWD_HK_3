@@ -212,9 +212,9 @@ Defines the grouping term for the fieldset
 ```
 <fieldset>
 	<legend>Your Name</legend>
-	<input type=“text” name=“first_name”>
-	<input type=“text” name=“middle_name”>
-	<input type=“text” name=“last_name”>
+	<input type="text" name="first_name">
+	<input type="text" name="middle_name">
+	<input type="text" name="last_name">
 </fieldset>
 ```
 
