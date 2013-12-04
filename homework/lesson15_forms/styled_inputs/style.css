@@ -121,6 +121,7 @@ input[type=checkbox] {
     box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
 }
 
+/* move the label when clicked */
 .slide input[type=checkbox]:checked + label {
     left: 54px;
 }

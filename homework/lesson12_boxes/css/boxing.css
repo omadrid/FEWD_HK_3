@@ -1,0 +1,59 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#container {
+	width: 100%;
+	list-style-type: none;
+}
+header {
+	border: 2px solid black;
+	margin: 20px 0;
+	box-sizing: border-box;
+}
+footer {
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+ul li {
+	border: 1px solid black;
+	width: 40px;
+	height: 20px;
+	margin-right: 10px;
+	float: left;
+}
+/*hidden*/
+ul li:first-child {
+	display: none;
+}
+.red {
+	width: 100%;
+	height: 40px;
+	border: 1px solid black;
+	background-color: red;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.green {
+	border: 1px solid black;
+	background-color: green;
+	margin: 1.2%;
+	width: 30%;
+	height: 40px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.blue {
+	border: 0.1em solid black;
+	background-color: blue;
+	float:left;
+	height: 40px;
+	width: 30%;
+	margin: 1.2%;
+}
+
+@media screen and (max-width:700)" href="css/boxing-mobile.css"

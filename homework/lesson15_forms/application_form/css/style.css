@@ -1,0 +1,102 @@
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 14px;
+     line-height: 1.4;
+     font-family: Lato, sans-serif;
+     background-image: url('http://i.imgur.com/gdJaSM3.png'); 
+}
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#spacer {
+     height: 30px;
+}
+#container {
+        width: 960px;
+        margin: auto;
+        box-shadow: 2px 2px 30px #555;
+        border-radius: 5px 5px 0 0;
+        /*background-image: url('http://i.imgur.com/1UQdD9r.png');*/
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+#silver-bar {
+  text-align: center;
+  background: linear-gradient(#EEE, #888);
+  padding: 15px;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #EEE;
+}
+form {
+     padding: 20px 20px 0px 20px;
+}
+.field-group {
+     padding: 5px;
+}
+input {
+  border-radius: 3px;
+  font-family: Lato, sans-serif;
+}
+.row div {
+  display: inline-block;
+}
+.row {
+     padding: 1px;
+}
+.right-column {
+  width: 500px;
+}
+.subheading, .label {
+  width: 150px;
+}
+.subheading {
+    font-weight: bold;
+    padding-left:5px;
+}
+optgroup {
+  color: gray;
+}
+option {
+  color: black
+}
+textarea {
+     width: 600px;
+}
+.buttons {
+     padding: 20px;
+}
+/*********field widths******/
+.name {
+     width: 48%;
+}
+.number {
+     width: 15%;
+}
+.address1, .address2 {
+     width: 98%;
+}
+.city {
+     width: 45%;
+}
+.state, .postal {
+     width: 25%;
+}
+/******************interactive*******************/
+.clickable {
+  background-color: oldLace;
+}
+
+#container .clicked {
+     background-color: white;
+     border: 1px s;
+     /*box-shadow: 0px 0px 5px 1px #3EE;*/
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+            <meta charset="utf-8">
+            <meta name="description" content="Your description goes here">
+            <meta name="keywords" content="one, two, three">
+            <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>  
+            <title>Application Form</title>
+                <!-- external CSS link -->
+                <!--<link rel="stylesheet" href="css/normalize.css">-->
+                <link rel="stylesheet" href="css/style.css">
+            
+  </head>
+  <body>
+    <div id="spacer"></div>
+    <div id="container">
+	    <div id="silver-bar">Course Application</div>
+	    <form>
+	      	<div class="section">
+	        	<p class="subheading">Your Contact Info</p>
+	        	<div class="field-group">
+		        	<div class="row">
+		          		<div class="label">Your Name</div>
+		          		<div class="right-column">
+		              		<input type="text" class="clickable name" placeholder="First" />
+		              		<input type="text" class="clickable name" placeholder="Last" />
+		          		</div>
+		        	</div>
+		        </div>
+		        <div class="field-group">
+		        	<div class="row">
+		          		<div class="label">Phone Number</div>
+		            	<div class="right-column">
+		              		<input type="text" class="clickable number"/><span>  -  </span>
+				            <input type="text" class="clickable number"/><span>  -  </span>
+				            <input type="text" class="clickable number"/>
+		            	</div>
+		          	</div>
+		        </div>
+		        <div class="field-group">
+		         	<div class="row">
+		          		<div class="label">Address</div>
+		            	<div class="right-column">
+		              		<input type="text" class="clickable address1" placeholder="Street Address"/>
+		              	</div>
+		            </div>  	
+		            <div class="row">
+				        <div class="label"></div> 
+				        <div class="right-column">    
+				            <input type="text" class="clickable address2" placeholder="Address Line 2"/>
+		            	</div>
+	          		</div>
+	          		<div class="row">
+				        <div class="label"></div> 
+				        <div class="right-column">    
+				            <input type="text" class="clickable city" placeholder="City"/>
+				            <input type="text" class="clickable state" placeholder="State"/>
+				            <input type="text" class="clickable postal" placeholder="Postal"/>
+		            	</div>
+	          		</div>
+	          	</div>
+	        </div>
+
+
+	      	<div class="section">
+	        	<p class="subheading">Skillz 'n' Interests</p>
+	        	<div class="field-group">
+		        	<div class="row">
+		          		<div class="label">Course</div>
+		          		<div class="right-column">
+		              		<select id ="course">
+						      <option value="0" disabled selected>Select One</option>
+						      <optgroup label="Web Development">
+						        <option value="1">Front-end</option>
+						        <option value="2">Back-end</option>
+						      </optgroup>
+						      <optgroup label="Design">
+						        <option value="3">Visual Design</option>
+						        <option value="4">User Experience</option>
+						      </optgroup>
+						    </select> 
+		          		</div>
+		        	</div>
+		        </div>
+		        <div class="field-group">
+		        	<div class="row">
+		          		<div class="label textarea-label">Past Experience</div>
+		            	<div class="right-column">
+		              		<textarea class="clickable experience"></textarea>
+		            	</div>
+		          	</div>
+		        </div>
+	        </div>
+	        <div class="section">
+	        	<p class="subheading">Anything Else?</p>
+	        	<div class="field-group">
+		        	<div class="row">
+		          		<div class="label">Referral</div>
+		          		<div class="right-column">
+		              		<select id="referral">
+						      <option value="None" selected>None</option>
+						      <option value="Friend">Friend</option>
+						      <option value="Instructor">Instructor</option>
+						      <option value="Online">Online</option>
+						    </select>
+		          		</div>
+		        	</div>
+		        </div>
+		        <div class="field-group">
+		        	<div class="row">
+		          		<div class="label">Comments</div>
+		            	<div class="right-column">
+		              		<textarea class="clickable comments"></textarea>
+		            	</div>
+		          	</div>
+		        </div>
+		        <div class="field-group">
+		        	<div class="row buttons">
+		          		<input type="button" value="Save Draft" />
+		  				<input type="submit" />        	
+		          	</div>
+		        </div>
+	        </div>          	                  
+	    </form>                 
+    </div>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  	<script src="main.js"></script>
+  </body>
+</html>

@@ -46,10 +46,11 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
+     
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
+     background-image: url('http://i.imgur.com/O6aZLEx.png');
 }
 
 
@@ -63,8 +64,18 @@ body {
 	margin: auto;
 }
 
-header {
-
+header div {
+     text-align: center;
+     border: 1px solid gray;
+     color: red;
+     font-size: 18px;
+     background: -webkit-linear-gradient(red, blue); /* For Safari */
+background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+background: linear-gradient(red, blue); /* Standard syntax */
+}
+header div {
+     
 }
 
 footer {

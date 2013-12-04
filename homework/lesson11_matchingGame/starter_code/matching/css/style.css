@@ -1,5 +1,5 @@
 body {
-  background-color: slateGray;
+  background-color: #9BBAAC;
   margin: 30px;
 }
 #all-cards {
@@ -12,8 +12,8 @@ body {
   width: 69px;
   height: 93px;
   border-radius: 4px 4px;
-  box-shadow: 5px 5px 20px 5px #222;
-  background-image: url('http://psdhunter.com/psds/3838-download-for-free-thin-vertical-lines-pattern-free-png.png');
+  box-shadow: 3px 2px 10px 5px #222;
+  background-image: url('http://images0.pixlis.com/background-image-stripes-and-lines-seamless-tileable-black-white-ebony-clay-2329hj.png');
   /*background-image: url('http://images.fineartamerica.com/images-medium-large-5/bright-colors-vertical-lines-abstract-pattern-stephen-rees.jpg');*/
 }
 .card.faceUp {

@@ -18,7 +18,7 @@ $('#winning').addClass('hidden-message');
 //clear firstUp & firstUpId?
 // rearrange cards;
 	//var cardSet = [ace, one, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king];
-  //$('div').each(function(index){$(this).attr("id", "div" + index);});
+  //$('.card').each(function(value, index){$(this).attr("id", "div" + index);});
 });
 
 //CLICK CARD
@@ -49,7 +49,7 @@ function othersFaceUpCheck(clickedCard) {
   	//if clickedCard is not the firstUp --> make it = secondUp, then check for pair
   	  	secondUp = clickedCard;
   	  	secondUpId = $(clickedCard).attr('id').substring(2);
-  	  	alert('This '+secondUpId+' is the secondUp. Now check for pair.');
+  	  	//alert('This '+secondUpId+' is the secondUp. Now check for pair.');
   	  	pairCheck(secondUpId, secondUp, firstUpId);
   	};
 };  	
