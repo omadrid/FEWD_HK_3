@@ -69,6 +69,7 @@ option {
 }
 textarea {
      width: 600px;
+     vertical-align: top;
 }
 .buttons {
      padding: 20px;
