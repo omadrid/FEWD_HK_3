@@ -11,12 +11,202 @@ Kit Yuen & Mart van de Ven
 ## Agenda
 <aside class="notes"></aside>
 
+* Javascript Object
 * Scalable and Modular Architecture for CSS
 * Javascript: __data-__
 * MapBox
 * Google Map API
 * Facebook Integration : Authentication
 * Facebook Integration : API Calls
+
+
+
+## Javascript Object
+<aside class="notes">Mart (?? Min)</aside>
+
+### The Greatest Container of them All
+
+* Object Oriented Programming VS Procedural Programming
+* An object stores its own values (states)
+* An object can also has behaviours (method/function)
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Definition of Object**
+
+* An `object` in CompSci is a collection of data and functions that work with that data.
+* Objects allow us to organize similar data effectively.
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Example of an object**
+
+* Person
+  * Has a name, age, location
+  * Can speak, eat
+* Lightbulb
+  * Number of watts, brand
+  * Can turn on and off
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Syntax**
+
+Empty object = {}
+
+```
+var obj = {};
+```
+
+Person Object
+
+```
+var person = {
+  age: 28,
+  name: "Mart van de Ven"
+};
+```
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Key-Value pairs**
+
+```
+var person = {
+  age: 28,
+  name: "Mart van de Ven",
+  key1: value1,
+  key2: value2,
+  ...
+  keyX: valueX // No comma for the last pair
+};
+```
+
+* Objects start and end with { } brackets
+* The key is a unique name similar to a variable name.
+* The value can be anything! String, number, boolean.. even function or another object!
+* The last value should have no comma in the end
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Accessing the object value by index method**
+
+Creating
+
+```
+var test = {a: "hi"};
+```
+
+Accessing
+
+```
+test["a"]; // returns "hi"
+```
+
+Assigning
+
+```
+test["a"] = "bye"; // test["a"] now stores “bye”
+```
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Accessing the object value by dot method**
+
+Creating
+
+```
+var test = {a: "hi"};
+```
+
+Accessing
+
+```
+test.a; // returns “hi”
+```
+
+Assigning
+
+```
+test.a = "bye"; // test["a"] now stores “bye”
+```
+
+
+
+## Javascript Object
+<aside class="notes"></aside>
+
+**Car example**
+
+```
+var car = {
+  make: "Ford",
+  model: "Focus",
+  year: 2013,
+  mileage: 89000
+}
+```
+
+
+
+## JSON: Javascript object in string
+<aside class="notes"></aside>
+
+* JavaScript Object Notation
+* Way of representing objects we create as "Strings"
+* Safe way of saving objects, and passing them between places
+* Facebook and Twitter use JSON to pass data around
+* When you tweet, JSON is sent to the twitter servers
+
+
+
+## JSON: Javascript object in string
+<aside class="notes"></aside>
+
+**Syntax**
+
+```
+// Normal object
+{name: "Mart van de Ven"}
+
+// JSON
+{"name": "Mart van de Ven"}
+```
+
+Wrap the key as string!
+
+
+
+## JSON: Javascript object in string
+<aside class="notes"></aside>
+
+**Conversion between JSON and Object**
+
+```
+// turns objects into JSON strings
+JSON.stringify(obj);
+
+// turns JSON strings into objects
+JSON.parse(string);
+```
 
 
 
@@ -257,14 +447,11 @@ Extending modules with sub-modules made easy.
 
 
 ## Facebook Integration : API Calls
-<aside class="notes">Mart - 40 Min</aside>
+<aside class="notes"></aside>
 
 [Facebook SDK for JavaScript](https://developers.facebook.com/docs/javascript/gettingstarted/)
 
-
-
-## Facebook Integration : API Calls
-<aside class="notes">Mart - 40 Min</aside>
+[Getting Started: The Graph API](https://developers.facebook.com/docs/getting-started/graphapi/)
 
 [Create a Facebook App](https://developers.facebook.com/docs/opengraph/getting-started/#create-app)
 
