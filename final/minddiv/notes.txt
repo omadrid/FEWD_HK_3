@@ -1,7 +1,42 @@
-function initialize() {
+var countries = {
+  "HK":{
+    "branch": {
+      "holdings": {
+          "lat":"22.279184",
+          "lng":"114.169375",
+          "businessUnits":"CWW"
+        },
+        "shatin": {
+          "lat":"22.382388",
+          "lng":"114.207824",
+          "businessUnits":"CR, CFA"
+        },
+    },
+  },
+};
+
+hldgs
+22.279184
+114.169375
+
+shatin
+22.382388
+114.207824
+
+hanoi
+21.033333
+105.850000
+
+hcm
+10.810583
+106.709142
+
+
+
+/*
   var myLatlng1 = new google.maps.LatLng(-22.360000, 114.128000);
-  var myLatlng2 = new google.maps.LatLng(-22.365000, 114.239000);	
-  var myLatlng3 = new google.maps.LatLng(-22.365500, 114.350000);	
+  var myLatlng2 = new google.maps.LatLng(-22.365000, 114.239000); 
+  var myLatlng3 = new google.maps.LatLng(-22.365500, 114.350000); 
 
   var mapOptions = {
     //center: new google.maps.LatLng(22.352734, 114.127699),
@@ -29,7 +64,7 @@ function initialize() {
     url: 'http://i.imgur.com/Ha3vsT6.png'
   });*/
 
-
+/*
   var infowindow1 = new google.maps.InfoWindow({
       content: contentString,
       maxWidth: 400
@@ -63,6 +98,5 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-
-
+*/
 

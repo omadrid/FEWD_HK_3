@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>Google Map Example</title>
+ <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="spacer"></div>
+	<div id="container">
+	  <div id="search-bar">
+	    <span>Find a Branch</span>
+	    <select id ="country-dropdown">
+	      <option value="0" disabled selected> </option>
+	        <option value="1">HK</option>
+	        <option value="2">VN</option>
+	    </select>
+	  </div>
+	  <div id="results">
+	  	  
+	  	  <div id="HKHLD-info" class="info-box HKHLD hide">
+	  	  	<div class="close">x</div>
+	  	  	<div class="clear"></div>
+	  	  	<h1>Holdings</h1>
+	  	  	<h2>Hong Kong</h2>
+	  	  	<p>CWW</p>
+	  	  	<img src="http://i.imgur.com/jlEfIvS.jpg">
+	  	  </div>
+
+	  	  <div id="HKSHA-info" class="info-box HKSHA hide">
+	  	  	<div class="close">x</div>
+	  	  	<div class="clear"></div>
+	  	  	<h1>Shatin</h1>
+	  	  	<h2>Hong Kong</h2>
+	  	  	<p>CR, CWM, CFA</p>
+	  	  	<img src="http://i.imgur.com/0B6Htsj.jpg">
+	  	  </div>
+		  
+		  <div id="result-list">
+		    <div id="HKHLD" class="HKHLD result">Holdings, Hong Kong</div>
+		    <div id="HKSHA" class="HKSHA result">Shatin, Hong Kong</div>
+		    <div class="clear"></div>
+		  </div>
+	  	  
+	  	  <div id="map-canvas">
+	  	  </div>
+	  </div>
+  	</div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA96n9kFh7r5Tq0q4wVIkiMgLrI8Eutr7g&v=3.exp&sensor=false&libraries=visualization"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

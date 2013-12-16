@@ -1,0 +1,77 @@
+var businessUnits = {
+        "All Business Units": {
+                        "code":"all",
+                        "value": "0"
+        },
+        "Worldwide Group": {
+                        "code":"cwg",
+                        "value": "1"
+        },
+        "World Mobility": {
+                        "code":"cwm",
+                        "value": "2"
+        },
+        "Relocations": {
+                        "code":"cr",
+                        "value": "3"
+        },
+        "Records Management": {
+                        "code":"crm",
+                        "value": "4"
+        },
+        "Fine Art": {
+                        "code":"cfa",
+                        "value": "5"
+        },
+        "Logistics": {
+                        "code":"3pl",
+                        "value": "6"
+        },
+        "Wine Cellars": {
+                        "code":"cwc",
+                        "value": "7"
+        }
+                                                                                };
+ 
+(function () {
+                var overrideCtx = {};
+                overrideCtx.Templates = {};
+ 
+                var headerString = "<div id='filters'>";
+                var position = 0;
+                for (var key in businessUnits) {
+                                headerString += "<div id='filter-" + businessUnits[key].code + "' class='filter-button " + businessUnits[key].code + "' buCode='" + businessUnits[key].value + "'>" + key + "</div>";
+                                if (position != 3 && position != 7) {
+                                                headerString += "<div class='gap'></div>";
+                                }
+                                position++;
+                }
+                headerString += "</div><div id='library-container'></div>";
+               
+                overrideCtx.Templates.Header = headerString;
+                overrideCtx.Templates.Item = CustomItem;
+                SPClientTemplates.TemplateManager.RegisterTemplateOverrides(overrideCtx);
+})();
+ 
+ 
+/*
+* This function builds the output for the item template.
+* Uses the Context object to access announcement data.
+*/
+function CustomItem(ctx) {
+                if (ctx.CurrentItem.RelatedBusinessUnits.length > 0) {
+                                for (var i=0; i<ctx.CurrentItem.RelatedBusinessUnits.length; i++) {
+                                                ctx.CurrentItem.RelatedBusinessUnits[i] = businessUnits[ctx.CurrentItem.RelatedBusinessUnits[i]].value;
+                                }
+                }
+               
+    // Build a listitem entry for every announcement in the list.
+    var ret =           "<a class='library-page-item' \
+                                                                href='/Marketing/Lists/MarketingLibrary/DispForm.aspx?ID=" + ctx.CurrentItem.ID + "' \
+                                                                categories='" + ctx.CurrentItem.MarketingLibraryCategory + "' \
+                                                                buss='" + ctx.CurrentItem.RelatedBusinessUnits + "'>" +
+                                                                                ctx.CurrentItem.Title +
+                                                "</a>";
+ 
+                return ret;
+}
