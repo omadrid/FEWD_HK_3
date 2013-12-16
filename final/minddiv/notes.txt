@@ -1,3 +1,23 @@
+'<div id="'+
+branchClicked+
+'-info" class="infobox hide'+
+branchClicked+
+'"><div class="close">x</div><div class="clear"></div><h1>'+
+branches[branchClicked].branchNameFull+
+'</h1><h2>'+
+branches[branchClicked].countryName+
+'<p>'+
+branches[branchClicked].businessUnits+
+'</p><img src="'+
+branches[branchClicked].pic+
+'></div>'
+
+
+
+
+
+
+
 var countries = {
   "HK":{
     "branch": {
@@ -31,6 +51,10 @@ hcm
 10.810583
 106.709142
 
+
+var obj = jQuery.parseJSON( '{ "name": "John" }' );
+alert( obj.name === "John" )
+;
 
 
 /*

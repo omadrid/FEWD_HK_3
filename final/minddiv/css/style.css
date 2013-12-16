@@ -61,15 +61,15 @@ img {
 	background-color: white;
 	border-radius: 5px;
 }
-.info-box > h1 {
+h1 {
 	font-weight: bold;
 	font-size:14px;
 }
-.info-box > h2 {
+h2 {
 	font-weight: none;
 	font-size:11px;
 }
-.info-box > p {
+p {
 	font-size: 10px;
 	color: gray;
 }
@@ -81,10 +81,10 @@ img {
 }
 /****************CONDITIONAL***************/
 .hide {
-	visibility:hidden;
+	display: none;
 }
 .show {
-	visibility: visible;
+	display: block;
 }
 .hilit {
 	background-color: #ddd;
