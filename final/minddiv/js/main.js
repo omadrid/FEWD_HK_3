@@ -38,7 +38,7 @@ $(document).ready(function() {
         "lat":"22.279184",
         "lng":"114.169375",
         "businessUnits":"CWW",
-        "pic":"http://i.imgur.com/jlEfIvS.jpg"
+        "pic":"http://i.imgur.com/tHYzNHB.jpg"
       },
       "HKSHA": {
         "value":"1",
@@ -49,7 +49,7 @@ $(document).ready(function() {
         "lat":"22.382388",
         "lng":"114.207824",
         "businessUnits":"CR, CWM, CFA",
-        "pic":"http://i.imgur.com/jlEfIvS.jpg"
+        "pic":"http://i.imgur.com/i4KKHnb.jpg"
       },
       "VNHAN": {
         "value":"2",                                
@@ -60,7 +60,7 @@ $(document).ready(function() {
         "lat":"21.033333",
         "lng":"105.850000",
         "businessUnits":"CR, CWM, CFA",
-        "pic":"http://i.imgur.com/jlEfIvS.jpg"
+        "pic":"http://i.imgur.com/eAohWxt.jpg"
       },
       "VNHCM": {
         "value":"3",
@@ -77,12 +77,13 @@ $(document).ready(function() {
     var myOptions = {
                     zoom: 4,
                     center: new google.maps.LatLng(15.782361, 111.201000),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                    mapTypeId: google.maps.MapTypeId.HYBRID
     };
     var mapMain = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
     
     var digit = 0;
     for (var key in branches) {
+    /*for (var key in branches) {*/
                     marker[digit] = new google.maps.Marker({
                                     position: new google.maps.LatLng(branches[key].lat, branches[key].lng),
                                     map: mapMain,
@@ -199,7 +200,12 @@ $(document).ready(function() {
         "VN"
       ];
     $( "#tags" ).autocomplete({
-      source: availableTags
+      source: availableTags,
+      messages: {
+      noResults: '',
+      results: function() {}
+    },
+      autofocus:true
     });
   });*/
 
