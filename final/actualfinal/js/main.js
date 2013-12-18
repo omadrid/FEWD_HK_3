@@ -87,9 +87,7 @@ $(document).ready(function() {
                                     position: new google.maps.LatLng(branches[key].lat, branches[key].lng),
                                     map: mapMain,
                                     title: key,
-                                    //animation: google.maps.Animation.DROP,
-                                    icon: 'http://i.imgur.com/HJv1WJe.png' 
-                                    /*'http://i.imgur.com/uC2AUOh.png'*/
+                                    icon: 'http://i.imgur.com/HJv1WJe.png'
                     });
                       /*****POPULATE SEARCH RESULTS********/
                      $('#result-list').append( 
@@ -181,8 +179,7 @@ $(document).ready(function() {
       $('#country-dropdown').change(function(){
         $('.result.hilit').removeClass('hilit');
         $('.info-box').removeClass('show');
-        var selectedCountryOption = $('#country-dropdown option:selected').text();
-        selectedCountryCode = selectedCountryOption.slice(-2);
+        selectedCountryCode = $('#country-dropdown option:selected').text();
         var newLat = countryMaps[selectedCountryCode].lat;
         var newLng = countryMaps[selectedCountryCode].lng;
         var newCenter = new google.maps.LatLng(newLat, newLng);
@@ -190,18 +187,4 @@ $(document).ready(function() {
         mapMain.setCenter(newCenter);
         mapMain.setZoom(newZoom);
       });
-    
-    /*$(function() {
-      var availableTags = [
-        "Hong Kong HK",
-        "Vietnam VN",
-        "HK",
-        "VN"
-      ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  });*/
-
-
 });

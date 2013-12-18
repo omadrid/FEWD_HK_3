@@ -17,12 +17,6 @@ body {
   padding: 20px;
   background-color: #;
 }
-#search-bar, #autocomplete-box {
-  display: inline-block;
-}
-#autocomplete-box {
-  margin: 0 0 0 10px;
-}
 #search-bar > span {
   padding: 10px;
 }

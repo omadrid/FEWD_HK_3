@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Select Country</title>
+  <title>Google Map Example</title>
  <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,21 +13,14 @@
 	    <span>Find a Branch</span>
 	    <select id ="country-dropdown">
 	      <option value="0" disabled selected> </option>
-	        <option value="1">Hong Kong HK</option>
-	        <option value="2">Vietnam VN</option>
+	        <option value="1">HK</option>
+	        <option value="2">VN</option>
 	    </select>
-	    
-	    <!--<div id="autocomplete-box">
-  			<label for="tags"></label>
-  			<input id="tags">
-		</div> -->
-
 	  </div>
 	  <div id="results">
-	  	<div id="info-canvas">
-
-	  	</div>
 		  <div id="result-list">
+		    <div id="HKHLD" class="HKHLD result">Holdings, Hong Kong</div>
+		    <div id="HKSHA" class="HKSHA result">Shatin, Hong Kong</div>
 		    <div class="clear"></div>
 		  </div>
 	  	 
@@ -37,7 +30,6 @@
   	</div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA96n9kFh7r5Tq0q4wVIkiMgLrI8Eutr7g&v=3.exp&sensor=false&libraries=visualization"></script>
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

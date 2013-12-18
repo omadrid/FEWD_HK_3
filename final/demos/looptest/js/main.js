@@ -34,13 +34,6 @@ $('#results-box').append( "<div class='result'>"+HKbranches[key].branchName+"</d
 
 
 
-
-
-
-
-  
-
-
 //text - replace content with a string
 //innerhtml - same as text but get the html of children
 //html - same but can put html elements
